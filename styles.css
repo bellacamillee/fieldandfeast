@@ -1,4 +1,4 @@
-/* CSS BY Isabella Andujo */
+/* CSS BY Isabella A */
 
 /* IMPORTED FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
@@ -41,7 +41,7 @@ body {
     font-family: 'Playfair Display', serif;
     background-color: var(--linen);
     color: var(--dark-charcoal);
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 header {
@@ -53,7 +53,7 @@ header {
 
 header img {
     width: 120px;
-    margin: 0 auto 1rem;
+    margin: 0 auto 1.5rem;
 }
 
 h1 {
@@ -89,6 +89,14 @@ section {
     margin-bottom: 3rem;
 }
 
+section:not(:last-of-type)::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: var(--champagne-gold);
+    margin-top: 2rem;
+}
+
 h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -103,17 +111,27 @@ article {
     margin-bottom: 1.5rem;
 }
 
+/* OFFERINGS GRID */
+
+#offerings {
+    display: grid;
+    gap: 1.5rem;
+}
+
 #offerings article {
     background-color: var(--olive-green);
     color: var(--soft-white);
-    padding: 1.5rem;
+    padding: 1.75rem;
     border-radius: 8px;
-    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 #offerings ul {
     margin-top: 1rem;
 }
+
+/* GALLERY GRID */
 
 .gallery-grid {
     display: grid;
@@ -125,12 +143,21 @@ figure {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 figcaption {
     padding: 1rem;
     font-style: italic;
     text-align: center;
+    margin-top: auto;
 }
 
 #gallery a {
@@ -142,6 +169,8 @@ figcaption {
     border-radius: 6px;
     margin-top: 1.5rem;
 }
+
+/* FOOTER */
 
 footer {
     background-color: var(--midnight-blue);
@@ -175,30 +204,28 @@ footer nav ul {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    #offerings {
-        display: grid;
-        gap: 1.5rem;
-    }
 }
 
 /* MEDIA QUERY (large) */
 @media (min-width: 900px) {
 
-    .gallery-grid {
-        grid-template-columns: repeat(3, 1fr);
+    h1 {
+        font-size: 3.5rem;
     }
 
     #offerings {
         grid-template-columns: repeat(2, 1fr);
+        align-items: stretch;
     }
 
     #offerings article:last-child {
         grid-column: span 2;
     }
 
-    h1 {
-        font-size: 3.5rem;
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
+
 }
 
 /* MEDIA QUERY (xl) */
@@ -207,6 +234,7 @@ footer nav ul {
     main {
         max-width: 1100px;
         margin: 0 auto;
+        padding: 4rem 2rem;
     }
 
     header img {
@@ -216,4 +244,5 @@ footer nav ul {
     h1 {
         font-size: 4rem;
     }
+
 }
