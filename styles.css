@@ -222,7 +222,6 @@ footer p {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* two offerings side by side on medium screens */
     #offerings {
         grid-template-columns: repeat(2, 1fr);
     }
