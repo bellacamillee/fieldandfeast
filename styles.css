@@ -49,6 +49,7 @@ header {
     color: var(--soft-white);
     text-align: center;
     padding: 3rem 1rem;
+    list-style: none;
 }
 
 header img {
@@ -94,10 +95,10 @@ section:not(:last-of-type)::after {
     display: block;
     height: 2px;
     background-color: var(--champagne-gold);
-    margin: 2rem 0 0 0;    
+    margin-top: 2rem;
     width: 100vw;           
-    position: relative;
-    left: 50%;              
+    position: relative;      
+    left: 50%; 
     transform: translateX(-50%);
 }
 
@@ -181,10 +182,11 @@ footer {
     color: var(--soft-white);
     text-align: center;
     padding: 3rem 1rem;
+    list-style: none;
 }
 
 footer a {
-    color: var(--champagne-gold);
+    color: var(--midnight-blue);
 }
 
 footer nav ul {
