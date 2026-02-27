@@ -172,28 +172,30 @@ figcaption {
 
 /* FOOTER */
 
-footer {
-    background-color: var(--midnight-blue);
-    color: var(--soft-white);
-    text-align: center;
+footer,
+footer nav,
+footer nav ul {
+    background-color: var(--midnight-blue) !important; /* forces dark blue */
     padding: 3rem 1rem;
+    margin: 0;
 }
 
-footer ul {
-    list-style: none;     /* remove bullets */
+footer ul,
+footer nav ul {
+    list-style: none !important;   /* remove bullets */
     padding: 0;
     margin: 0;
-    display: flex;         /* optional: make links horizontal */
+    display: flex;
     justify-content: center;
     gap: 1rem;
 }
 
 footer li {
-    display: inline-block; /* inline items for horizontal nav */
+    display: inline-block;
 }
 
 footer a {
-    color: var(--soft-white); /* links should be visible on dark bg */
+    color: var(--champagne-gold) !important;
 }
 
 /* MEDIA QUERY (medium) */
