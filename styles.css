@@ -90,16 +90,12 @@ section {
     margin-bottom: 3rem;
 }
 
-section:not(:last-of-type)::after {
+section:not(:last-of-type)::after { 
     content: "";
     display: block;
     height: 2px;
-    background-color: var(--champagne-gold);
-    margin-top: 2rem;
-    width: 100vw;           
-    position: relative;      
-    left: 50%; 
-    transform: translateX(-50%);
+    background-color: var(--champagne-gold); 
+    margin-top: 2rem; 
 }
 
 h2 {
