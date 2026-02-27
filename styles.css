@@ -49,7 +49,6 @@ header {
     color: var(--soft-white);
     text-align: center;
     padding: 3rem 1rem;
-    list-style: none;
 }
 
 header img {
@@ -178,17 +177,23 @@ footer {
     color: var(--soft-white);
     text-align: center;
     padding: 3rem 1rem;
-    list-style: none;
+}
+
+footer ul {
+    list-style: none;     /* remove bullets */
+    padding: 0;
+    margin: 0;
+    display: flex;         /* optional: make links horizontal */
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer li {
+    display: inline-block; /* inline items for horizontal nav */
 }
 
 footer a {
-    color: var(--midnight-blue);
-}
-
-footer nav ul {
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
+    color: var(--soft-white); /* links should be visible on dark bg */
 }
 
 /* MEDIA QUERY (medium) */
