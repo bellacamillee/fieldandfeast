@@ -53,7 +53,7 @@ main {
 }
 
 /* MOBILE DEFAULT (STACKED) */
-.offerings-grid article {
+#offerings article {
     background-color: #76885B;
     color: #FAF9F6;
     padding: 1.75rem;
@@ -72,22 +72,27 @@ main {
 
 /* DESKTOP LAYOUT */
 @media (min-width: 900px) {
-    .offerings-grid {
+
+    #offerings {
         display: flex;
         flex-wrap: wrap;
         gap: 1.5rem;
     }
 
-    /* First two side by side */
-    .offerings-grid article:nth-of-type(1),
-    .offerings-grid article:nth-of-type(2) {
-        flex: 1 1 calc(50% - 0.75rem);
+    #offerings h2 {
+        width: 100%;
+    }
+
+    /* First two side-by-side */
+    #offerings article:nth-of-type(1),
+    #offerings article:nth-of-type(2) {
+        flex: 0 0 49%;
         margin-bottom: 0;
     }
 
     /* Third full width */
-    .offerings-grid article:nth-of-type(3) {
-        flex: 1 1 100%;
+    #offerings article:nth-of-type(3) {
+        flex: 0 0 100%;
         margin-top: 1.5rem;
     }
 }
