@@ -134,6 +134,15 @@ article {
     }
 }
 
+#offerings article {
+    background-color: var(--olive-green);
+    color: var(--soft-white);
+    padding: 1.75rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
 /* GALLERY GRID */
 .gallery-grid {
     display: grid;
