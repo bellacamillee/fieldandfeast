@@ -95,9 +95,9 @@ section:not(:last-of-type)::after {
     height: 2px;
     background-color: var(--champagne-gold);
     margin-top: 2rem;
-    width: 100vw; 
-    position: relative;
-    left: 50%;
+    width: 100vw;           
+    position: relative;      
+    left: 50%; 
     transform: translateX(-50%);
 }
 
