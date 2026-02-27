@@ -176,7 +176,7 @@ figcaption {
 footer,
 footer nav,
 footer nav ul {
-    background-color: var(--midnight-blue) !important; /* forces dark blue */
+    background-color: var(--midnight-blue) !important; 
     padding: 3rem 1rem;
     margin: 0;
 }
@@ -193,6 +193,7 @@ footer nav ul {
 
 footer li {
     display: flex;
+    color: var(--soft-white) !important;
 }
 
 footer a {
