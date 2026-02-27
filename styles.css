@@ -36,7 +36,6 @@ a {
 }
 
 /* GLOBAL STYLES (mobile first/small) */
-
 body {
     font-family: 'Playfair Display', serif;
     background-color: var(--linen);
@@ -75,6 +74,7 @@ nav ul {
     justify-content: space-around;
     padding: 1rem;
     list-style: none !important;
+
 }
 
 nav a {
@@ -113,10 +113,10 @@ article {
 }
 
 /* OFFERINGS GRID */
-
 #offerings {
     display: grid;
     gap: 1.5rem;
+    grid-template-columns: 1fr; /* default stacked on mobile */
 }
 
 #offerings article {
@@ -133,7 +133,6 @@ article {
 }
 
 /* GALLERY GRID */
-
 .gallery-grid {
     display: grid;
     gap: 1.5rem;
@@ -172,7 +171,6 @@ figcaption {
 }
 
 /* FOOTER */
-
 footer {
     background-color: var(--midnight-blue);
     color: var(--soft-white);
@@ -188,18 +186,16 @@ footer nav ul {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    background: none;  
 }
 
 footer li {
     display: inline-block;
-    color: var(--soft-white);
 }
 
 footer a {
     color: var(--soft-white);
     text-decoration: none;
-
+    background: none;
 }
 
 footer p {
@@ -219,6 +215,11 @@ footer p {
     }
 
     .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* two offerings side by side on medium screens */
+    #offerings {
         grid-template-columns: repeat(2, 1fr);
     }
 
