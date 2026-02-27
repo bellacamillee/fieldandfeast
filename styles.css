@@ -188,6 +188,7 @@ footer nav ul {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    background: none;  
 }
 
 footer li {
@@ -198,7 +199,7 @@ footer li {
 footer a {
     color: var(--soft-white);
     text-decoration: none;
-    background: none;  
+
 }
 
 footer p {
