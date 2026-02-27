@@ -105,9 +105,10 @@ article {
 #about article {
     max-width: 800px;
     margin: 0 auto;
+    position: relative;
 }
 
-#about::after {
+#about article::after {
     content: "";
     display: block;
     height: 1px;
@@ -118,6 +119,10 @@ article {
 #offerings {
     display: grid;
     gap: 1.5rem;
+}
+
+#offerings h2 {
+    grid-column: 1 / -1;
 }
 
 #offerings article {
@@ -213,11 +218,10 @@ footer nav ul {
 
     #offerings {
         grid-template-columns: repeat(2, 1fr);
-        align-items: stretch;
     }
 
-    #offerings article:last-child {
-        grid-column: span 2;
+    #offerings article:last-of-type {
+        grid-column: 1 / -1;
     }
 
     .gallery-grid {
