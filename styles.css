@@ -74,6 +74,7 @@ nav ul {
     display: flex;
     justify-content: space-around;
     padding: 1rem;
+    list-style: none !important;
 }
 
 nav a {
@@ -182,7 +183,7 @@ footer nav ul {
 
 footer ul,
 footer nav ul {
-    list-style: none !important;   /* remove bullets */
+    list-style: none !important;
     padding: 0;
     margin: 0;
     display: flex;
@@ -191,11 +192,11 @@ footer nav ul {
 }
 
 footer li {
-    display: inline-block;
+    display: flex;
 }
 
 footer a {
-    color: var(--champagne-gold) !important;
+    color: var(--soft-white) !important;
 }
 
 /* MEDIA QUERY (medium) */
