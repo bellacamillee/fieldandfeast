@@ -114,30 +114,28 @@ article {
 
 /* OFFERINGS GRID */
 #offerings {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 4rem 2rem;
-}
-
-.offerings-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
+    grid-template-columns: 1fr; /* default stacked on mobile */
 }
 
-#offerings {
-    border-bottom: 3px solid var(--golden-yellow);
+#offerings article {
+    background-color: var(--olive-green);
+    color: var(--soft-white);
+    padding: 1.75rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
 }
-@media (min-width: 768px) {
-    .offerings-grid {
-        grid-template-columns: 1fr 1fr;
-    }
 
-    .offerings-grid article:nth-child(3) {
-        grid-column: 1 / -1;
-    }
+#offerings ul {
+    margin-top: 1rem;
 }
+
+#offerings h2 {
+    grid-column: 1 / -1;
+}
+
 /* GALLERY GRID */
 .gallery-grid {
     display: grid;
