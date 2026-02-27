@@ -173,31 +173,36 @@ figcaption {
 
 /* FOOTER */
 
-footer,
-footer nav,
-footer nav ul {
-    background-color: var(--midnight-blue) !important; 
+footer {
+    background-color: var(--midnight-blue);
+    color: var(--soft-white);
+    text-align: center;
     padding: 3rem 1rem;
-    margin: 0;
 }
 
 footer ul,
 footer nav ul {
-    list-style: none !important;
+    list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 1rem 0 0 0;
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
 
 footer li {
-    display: flex;
-    color: var(--soft-white) !important;
+    display: inline-block;
+    color: var(--soft-white);
 }
 
 footer a {
-    color: var(--soft-white) !important;
+    color: var(--soft-white);
+    text-decoration: none;
+}
+
+footer p {
+    color: var(--soft-white);
+    margin: 0.5rem 0 0 0;
 }
 
 /* MEDIA QUERY (medium) */
